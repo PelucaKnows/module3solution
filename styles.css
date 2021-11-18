@@ -19,6 +19,13 @@ h4{
     width:100%;
     padding: 20px;
 }
+.nav-item{
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom:black;
+    color:black;
+}
 .menu{
     width: 100%;
     background-color: #6c757d;
@@ -27,6 +34,7 @@ h4{
     color:black;
     font-size: 36px;
     width:100%;
+    float:left;
 }
 
 @media (min-width: 768px) {
@@ -49,23 +57,48 @@ h2{
 }
         
 @media (min-width: 992px) {
-
-    .navbar-expand-lg .navbar-collapse  {
-        display: flex!important;
-        flex-basis: auto;
-        width: auto;
-        margin-left: 40pc;}
+    .navbar-expand-lg .navbar-collapse {
+        display:none !important;
     }
+}
+    
 @media (min-width: 768) and (max-width: 991px) {
         
     } 
 @media (max-width: 767px) {
         /* Header */
-    .navbar-brand {
-     padding-top: 10px;
-    height: 80px;
-    }}
 
+    
+    .navbar-toggle {
+        display: none;
+    }
+    .nav-item {
+        float:left;
+    
+    }
+}
 
+    .nav-link {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid black;
+        color: black;
+        display: block;
+        
+    }
 
-
+    .navbar-toggler {
+        position:relative;
+        float:right;
+        padding: 10px;
+        margin-top: 8px;
+        background-color: transparent;
+        border-radius: 4px;
+    }
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+}
